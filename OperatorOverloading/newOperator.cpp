@@ -12,6 +12,7 @@ void operator delete(void *p)
 {
     cout<<"Overload delete operator"<<endl;
     //delete p;  This will cause infiniteLoop
+    free(p);
 
 }
 
